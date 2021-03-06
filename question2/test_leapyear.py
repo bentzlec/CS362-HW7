@@ -19,5 +19,14 @@ class TestCase(unittest.TestCase):
    def test2_test_input(self):
       self.assertEqual(leapyear.check_input("Frog"), 0)
 
+   def test1(self):
+      self.assertEqual(leapyear.check_leapyear(2080), 1)
+   def test2(self):
+      self.assertEqual(leapyear.check_leapyear(2045), 0)
+   def test3(self):
+      self.assertEqual(leapyear.check_leapyear("Dog"), 0)
+
+
+
 if __name__ == '__main__':
    unittest.main()
