@@ -15,3 +15,9 @@ def div_by_400(i):
       return 1
    else:
       return 0
+
+def check_input(i):
+   if (type(i) == int):
+      return 1
+   else:
+      return 0
